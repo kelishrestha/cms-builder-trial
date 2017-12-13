@@ -1,0 +1,16 @@
+#!/bin/bash
+# To Copy and rename the yml files in the config directory:-
+#   * Type './configure' from ~/working_dir directory in terminal.
+#   * (or) Double click 'me' in Finder.
+
+mkdir -p .git/hooks
+
+# # Uncomment these lines to prohibit changes to master
+# cp pre-push .git/hooks/pre-push
+# chmod +x .git/hooks/pre-push
+
+# Copy example files
+cp config/database.example.yml config/database.yml
+cp config/cable.example.yml config/cable.yml
+cp config/secrets.example.yml config/secrets.yml
+cp config/application.example.yml config/application.yml

@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+
+secret_key_base: c9a02ee905e21be9eae1662f40e3dd152ccedd4bc3ce43cfa4ad160395f24f82e7857274ec5346f0a42102296b3dc5abdc4d24cf1c433e8838fd4ae9f00f5a94
+app_url: http://127.0.0.1:3000
+app_token: app_token
+
+production:
+  # Change url for production
+  app_url: http://127.0.0.1:3000
+  app_token: app_token

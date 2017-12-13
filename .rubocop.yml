@@ -1,0 +1,25 @@
+require: rubocop-rspec
+AllCops:
+  Exclude:
+    - db/**/*
+    - config/environments/*
+    - bin/*
+
+  TargetRubyVersion:
+    2.4.1
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 100
+
+Style/Documentation:
+  Exclude:
+    - db/migrate/*
+
+RSpec/MultipleExpectations:
+  Max: 2
+
+Metrics/BlockLength:
+  Enabled: false

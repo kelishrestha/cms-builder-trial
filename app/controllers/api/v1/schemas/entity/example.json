@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "field_name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "invalidMessage": "'field_name' must be a non-blank string"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 500,
+      "invalidMessage": "'description' must be a string with a maximum of 500 characters"
+    },
+    "owner": {
+      "type": "object",
+      "invalidMessage": "'owner' must be an object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1,
+          "invalidMessage": "'owner.type' must be a non-blank string"
+        },
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "invalidMessage": "'owner.id' must be a non-blank string"
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ]
+    }
+  },
+  "required": [
+    "field_name"
+  ]
+}
