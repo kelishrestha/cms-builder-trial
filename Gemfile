@@ -43,6 +43,8 @@ gem 'haml-rails', '~> 1.0'
 
 gem 'figaro'
 
+gem 'casein', '~>5.3.0'
+
 group :development, :test do
   gem 'pry-nav'
   gem 'pry-rails'
